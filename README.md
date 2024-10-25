@@ -31,7 +31,7 @@ To run the project, clone the repository and install the required packages using
 pip install -r requirements.txt
 ```
 
-### Data Collection
+## Data Collection
 
 The stock price data is fetched via the **Yahoo Finance** API using the `yfinance` Python library. The default stock symbol used is **Reliance.NS** (Reliance Industries Limited, India) for this notebook. This can be adjust by ticker as desired for other stocks.
 
