@@ -91,7 +91,3 @@ The project includes visualizations comparing the different volatility estimates
 - Black, F., & Scholes, M. (1973). "The Pricing of Options and Corporate Liabilities." *Journal of Political Economy.*
 - Parkinson, M. (1980). "The Extreme Value Method for Estimating the Variance of the Rate of Return." *Journal of Business.*
 - Garman, M. B., & Klass, M. J. (1980). "On the Estimation of Security Price Volatilities from Historical Data." *Journal of Business.*
-
----
-
-This README provides a structured overview for users and contributors to understand the functionality and objectives of the project, and it can be customized further to match your exact use cases and findings.
