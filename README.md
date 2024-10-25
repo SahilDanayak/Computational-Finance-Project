@@ -84,7 +84,9 @@ The project includes visualizations comparing the different volatility estimates
 - **Comparative Analysis**: A graph shows the option prices estimated through Black-Scholes and Binomial models across various parameters.
 ![Call Option Price vs time steps](call_option_price_vs_time_plot.png "Call Option Price (Continuous vs Discrete Models)")
 
-- **Volatility Estimates**: Outputs average volatility from different estimation methods.  #to change
+- **Option Price Estimates**: A table shows the predicted option prices in comparision with the actual ones.
+![Prediction Table](Predictions.jpeg "Call Option Price (Prediction Table)")
+
 
 ## References
 
