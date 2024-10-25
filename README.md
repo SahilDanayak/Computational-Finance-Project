@@ -81,11 +81,27 @@ call_price_binomial, put_price_binomial = binomial_option_prices(S=stock_price, 
 
 The project includes visualizations comparing the different volatility estimates and resulting option prices calculated using the Black-Scholes and Binomial models.
 
-- **Comparative Analysis**: A graph shows the option prices estimated through Black-Scholes and Binomial models across various parameters.
-![Call Option Price vs time steps](call_option_price_vs_time_plot.png "Call Option Price (Continuous vs Discrete Models)")
+1. **Volatility Analysis**  
+   - Examining the option chain for Reliance options expiring on October 31, 2024, we find that the implied volatility (IV) for at-the-money options is approximately 21-23%. This reflects the market's expectation of future price fluctuations based on supply, demand, and current option pricing.
+   - To further validate and compare this with our calculated volatility measures, we utilized several statistical methods:
 
-- **Option Price Estimates**: A table shows the predicted option prices in comparision with the actual ones.
-![Prediction Table](Predictions.jpeg "Option Price Prediction Table")
+      - **Standard Deviation Method**: Calculated annualized volatility is approximately 21.78%, aligning closely with market IV, indicating that recent price movements reflect market-expected variability.
+
+      - **Parkinson’s Volatility**: Estimated at 18.66%, below the IV range, suggesting that highs and lows alone may not fully capture short-term fluctuations influencing near-term option pricing.
+
+      - **Garman-Klass Volatility**: Estimated at 18.51%, similar to Parkinson’s, suggesting that incorporating opening and closing prices may still underestimate short-term market risks.
+
+      - **Exponentially Weighted Moving Average (EWMA)**: Estimated at 20.06%, aligning more closely with the IV range, capturing recent price volatility and suggesting alignment with near-term market expectations.
+
+   - **Summary**: Each method provides a unique perspective on historical volatility, with Standard Deviation and EWMA methods closer to the lower end of the IV range, while Parkinson and Garman-Klass estimates are lower. This comparison suggests that market participants expect slightly higher future volatility than historical estimates alone, capturing potential near-term risks and uncertainties.
+
+2. **Comparative Analysis**  
+   - A graph shows the option prices estimated through Black-Scholes and Binomial models across various parameters.
+   ![Call Option Price vs time steps](call_option_price_vs_time_plot.png "Call Option Price (Continuous vs Discrete Models)")
+
+3. **Option Price Estimates**  
+   - A table shows the predicted option prices in comparison with the actual ones.
+   ![Prediction Table](Predictions.jpeg "Option Price Prediction Table")
 
 
 ## References
